@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".NewUserActivity">
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/arrow_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/newImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backButton" />
+
+    <TextView
+        android:id="@+id/newFood"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:fontFamily="@font/yeonsung_regular"
+        android:text="Food Yatra"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@+id/newImage"
+        app:layout_constraintStart_toStartOf="@+id/newImage"
+        app:layout_constraintTop_toBottomOf="@+id/newImage" />
+
+    <TextView
+        android:id="@+id/newPro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="Create New User Admin"
+        android:textColor="@color/textColor"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="@+id/newFood"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/newFood"
+        app:layout_constraintTop_toBottomOf="@+id/newFood" />
+
+    <EditText
+        android:id="@+id/newUsername"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/edittextshape"
+        android:elevation="5dp"
+        android:drawableLeft="@drawable/usernew"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:fontFamily="@font/lato_regular"
+        android:inputType="text"
+        android:padding="15dp"
+        android:hint="Email and Phone Number"
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toEndOf="@+id/newPro"
+        app:layout_constraintStart_toStartOf="@+id/newPro"
+        app:layout_constraintTop_toBottomOf="@+id/newPro" />
+
+    <EditText
+        android:id="@+id/newEmail"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittextshape"
+        android:drawableLeft="@drawable/mail"
+        android:drawablePadding="15dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:fontFamily="@font/lato_regular"
+        android:hint="Email and Phone Number"
+        android:inputType="text"
+        android:padding="15dp"
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toEndOf="@+id/newUsername"
+        app:layout_constraintStart_toStartOf="@+id/newUsername"
+        app:layout_constraintTop_toBottomOf="@+id/newUsername" />
+
+
+    <EditText
+        android:id="@+id/restaurantName"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittextshape"
+        android:drawableLeft="@drawable/lock"
+        android:drawablePadding="15dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:fontFamily="@font/yeonsung_regular"
+        android:hint="Password"
+        android:inputType="numberPassword"
+        android:padding="15dp"
+        android:paddingLeft="15sp"
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toEndOf="@+id/newEmail"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/newEmail"
+        app:layout_constraintTop_toBottomOf="@+id/newEmail" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/newButton"
+        android:layout_width="160dp"
+        android:layout_height="57dp"
+        android:background="@drawable/greenbuttongradient"
+        android:text="Create New User"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="@+id/restaurantName"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="@+id/restaurantName"
+        app:layout_constraintTop_toBottomOf="@+id/restaurantName"
+        app:layout_constraintVertical_bias="0.355" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/yeonsung_regular"
+        android:text="Design by\nAnmol Daim"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/newButton"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/newButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

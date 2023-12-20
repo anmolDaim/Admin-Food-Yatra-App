@@ -1,0 +1,34 @@
+{
+  "project_info": {
+    "project_number": "24327553892",
+    "project_id": "food-yatra-8e70b",
+    "storage_bucket": "food-yatra-8e70b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24327553892:android:f191861bcdec8e69bcf071",
+        "android_client_info": {
+          "package_name": "com.example.adminfoodyatra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "firebase-adminsdk-u7pke@food-yatra-8e70b.iam.gserviceaccount.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeXSto7JtxOB2L6Q8ze1TxqOyUiTb5TPE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

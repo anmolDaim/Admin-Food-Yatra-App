@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Admin Food Yatra</string>
+    <string name="default_web_client_id">firebase-adminsdk-u7pke@food-yatra-8e70b.iam.gserviceaccount.com</string>
+</resources>
